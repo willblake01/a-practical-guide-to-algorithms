@@ -1,1 +1,1 @@
-export { uniqueSort } from './UniqueSort'
+export { memoizedUniqueSort } from './UniqueSort'

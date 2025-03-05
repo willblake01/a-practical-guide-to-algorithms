@@ -1,3 +1,4 @@
+import { memoize } from "./utils/memoize";
 // It should not return any duplicate values in the sorted array.
 
 // input: [1,5,2,1] => output: [1,2,5]
@@ -7,7 +8,7 @@ interface Cache {
   [key: number]: boolean;
 }
 
-export const uniqueSort = (arr: number[]): number[] => {
+const uniqueSort = (arr: number[]): number[] => {
   const cache: Cache = {};
   const result: number[] = [];
 
@@ -20,3 +21,5 @@ export const uniqueSort = (arr: number[]): number[] => {
 
   return result.sort((a: number, b: number) => a - b);
 }
+
+export const memoizedUniqueSort = memoize(uniqueSort);

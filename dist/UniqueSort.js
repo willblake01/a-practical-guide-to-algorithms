@@ -1,7 +1,7 @@
 "use strict";
-// It should not return any duplicate values in the sorted array.
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.uniqueSort = void 0;
+exports.memoizedUniqueSort = void 0;
+const memoize_1 = require("./utils/memoize");
 const uniqueSort = (arr) => {
     const cache = {};
     const result = [];
@@ -13,4 +13,4 @@ const uniqueSort = (arr) => {
     }
     return result.sort((a, b) => a - b);
 };
-exports.uniqueSort = uniqueSort;
+exports.memoizedUniqueSort = (0, memoize_1.memoize)(uniqueSort);
