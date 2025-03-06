@@ -1,4 +1,4 @@
-import { mergeSort } from "./MergeSort";
+import { mergeSort } from "./mergeSort";
 
 describe("MergeSort", () => {
   it("should sort an array", () => {

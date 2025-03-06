@@ -1,4 +1,4 @@
-import {  linearSearch } from './LinearSearch';
+import {  linearSearch } from './linearSearch';
 
 describe('linearSearch', () => {
   it('should return the index of the item in the list', () => {

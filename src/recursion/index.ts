@@ -1,1 +1,1 @@
-export { factorial, joinElements } from './Recursion'
+export { factorial, joinElements } from './recursion'

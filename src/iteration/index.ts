@@ -1,1 +1,1 @@
-export { joinElements } from './Iteration'
+export { joinElements } from './iteration'

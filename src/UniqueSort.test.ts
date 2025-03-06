@@ -1,5 +1,5 @@
 import { describe, expect } from '@jest/globals';
-import { uniqueSort } from "./UniqueSort";
+import { uniqueSort } from "./uniqueSort";
 
 describe('Unique sort', () => { 
   it('should return a sorted array with no duplicates', () => {

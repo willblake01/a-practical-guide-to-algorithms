@@ -1,2 +1,2 @@
-export { uniqueSort } from './UniqueSort'
-export { linearSearch } from './LinearSearch'
+export { uniqueSort } from './uniqueSort'
+export { linearSearch } from './linearSearch'
