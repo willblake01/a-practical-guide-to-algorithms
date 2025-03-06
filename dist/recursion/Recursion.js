@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.joinElements = void 0;
-const joinElements = (elements, separator) => {
+exports.factorial = exports.joinElements = void 0;
+const memoize_1 = require("../utils/memoize");
+exports.joinElements = (0, memoize_1.memoize)((elements, separator) => {
     const recurse = (index, resultSoFar) => {
         resultSoFar += elements[index];
         if (index === elements.length - 1) {
@@ -12,5 +13,15 @@ const joinElements = (elements, separator) => {
         }
     };
     return recurse(0, '');
-};
-exports.joinElements = joinElements;
+});
+exports.factorial = (0, memoize_1.memoize)((n) => {
+    const recurse = (n, resultSoFar) => {
+        if (n === 0) {
+            return resultSoFar;
+        }
+        else {
+            return recurse(n - 1, resultSoFar * n);
+        }
+    };
+    return recurse(n, 1);
+});
