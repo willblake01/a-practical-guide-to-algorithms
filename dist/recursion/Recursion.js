@@ -15,13 +15,10 @@ exports.joinElements = (0, memoize_1.memoize)((elements, separator) => {
     return recurse(0, '');
 });
 exports.factorial = (0, memoize_1.memoize)((n) => {
-    const recurse = (n, resultSoFar) => {
-        if (n === 0) {
-            return resultSoFar;
-        }
-        else {
-            return recurse(n - 1, resultSoFar * n);
-        }
-    };
-    return recurse(n, 1);
+    if (n === 0) {
+        return 1;
+    }
+    else {
+        return n * (0, exports.factorial)(n - 1);
+    }
 });

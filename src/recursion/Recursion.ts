@@ -15,13 +15,9 @@ export const joinElements = memoize((elements: string[], separator: string): str
 })
 
 export const factorial = memoize((n: number): number => {
-    const recurse = (n: number, resultSoFar: number): number => {
       if (n === 0) {
-        return resultSoFar;
+        return 1;
       } else {
-        return recurse(n - 1, resultSoFar * n);
+        return n * factorial(n - 1);
       }
-    }
-
-    return recurse(n, 1);
 });
