@@ -8,7 +8,7 @@ interface Cache {
   [key: number]: boolean;
 }
 
-const uniqueSort = (arr: number[]): number[] => {
+export const uniqueSort = memoize((arr: number[]): number[] => {
   const cache: Cache = {};
   const result: number[] = [];
 
@@ -20,6 +20,4 @@ const uniqueSort = (arr: number[]): number[] => {
   }
 
   return result.sort((a: number, b: number) => a - b);
-}
-
-export const memoizedUniqueSort = memoize(uniqueSort);
+})

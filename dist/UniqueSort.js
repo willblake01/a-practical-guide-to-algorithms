@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.memoizedUniqueSort = void 0;
+exports.uniqueSort = void 0;
 const memoize_1 = require("./utils/memoize");
-const uniqueSort = (arr) => {
+exports.uniqueSort = (0, memoize_1.memoize)((arr) => {
     const cache = {};
     const result = [];
     for (let i = 0; i < arr.length; i++) {
@@ -12,5 +12,4 @@ const uniqueSort = (arr) => {
         }
     }
     return result.sort((a, b) => a - b);
-};
-exports.memoizedUniqueSort = (0, memoize_1.memoize)(uniqueSort);
+});
