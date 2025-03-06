@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.joinElements = void 0;
-const joinElements = (elements, separator) => {
+exports.iterativelyJoinElements = void 0;
+const iterativelyJoinElements = (elements, separator) => {
     let result = '';
     for (let i = 0; i < elements.length; i++) {
         result += elements[i];
@@ -11,4 +11,4 @@ const joinElements = (elements, separator) => {
     }
     return result;
 };
-exports.joinElements = joinElements;
+exports.iterativelyJoinElements = iterativelyJoinElements;

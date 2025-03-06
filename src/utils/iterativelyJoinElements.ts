@@ -1,4 +1,4 @@
-export const joinElements = (elements: string[], separator: string): string => {
+export const iterativelyJoinElements = (elements: string[], separator: string): string => {
   let result = '';
   for (let i = 0; i < elements.length; i++) {
     result += elements[i];

@@ -1,5 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.memoize = void 0;
+exports.recursivelyJoinElements = exports.memoize = exports.iterativelyJoinElements = exports.factorial = void 0;
+var factorial_1 = require("./factorial");
+Object.defineProperty(exports, "factorial", { enumerable: true, get: function () { return factorial_1.factorial; } });
+var iterativelyJoinElements_1 = require("./iterativelyJoinElements");
+Object.defineProperty(exports, "iterativelyJoinElements", { enumerable: true, get: function () { return iterativelyJoinElements_1.iterativelyJoinElements; } });
 var memoize_1 = require("./memoize");
 Object.defineProperty(exports, "memoize", { enumerable: true, get: function () { return memoize_1.memoize; } });
+var recursivelyJoinElements_1 = require("./recursivelyJoinElements");
+Object.defineProperty(exports, "recursivelyJoinElements", { enumerable: true, get: function () { return recursivelyJoinElements_1.recursivelyJoinElements; } });
