@@ -5,15 +5,17 @@ import { memoize } from "../utils";
 // Write a function, make change, that returns an integer that represents the least number of coins that add up to an amount where the amount is always divisible by 5
 
 export const makeChange = memoize((coins: number[], amount: number): number => {
+  coins.sort((a, b) => b - a);
+
   let coinCount = 0;
-  let i = coins.length - 1;
+  let i = 0
 
   while (amount > 0) {
     if (coins[i] <= amount) {
       amount -= coins[i];
       coinCount++;
     } else {
-      i--;
+      i++;
     }
   }
 
