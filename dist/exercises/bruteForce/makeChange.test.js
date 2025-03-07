@@ -8,5 +8,7 @@ describe('makeChange', () => {
         expect((0, makeChange_1.makeChange)([1, 6, 10], 13)).toBe(4);
         expect((0, makeChange_1.makeChange)([1, 6, 10], 17)).toBe(3);
         expect((0, makeChange_1.makeChange)([1, 6, 10], 22)).toBe(4);
+        expect((0, makeChange_1.makeChange)([1, 6, 10], 0)).toBe(0);
+        expect((0, makeChange_1.makeChange)([], 22)).toBe(0);
     });
 });

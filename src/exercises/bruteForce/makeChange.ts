@@ -5,12 +5,12 @@ export const makeChange = memoize((coins: number[], amount: number): number => {
 
   if (amount === 0) return 0;
 
-  let minCoins: number = Infinity;
+  let minCoins: number | undefined = undefined;
 
   coins.forEach(coin => {
     if (amount - coin >= 0) {
       let currentMinCoins = makeChange(coins, amount - coin);
-      if (minCoins === Infinity || currentMinCoins < minCoins) {
+      if (minCoins === undefined || currentMinCoins < minCoins) {
         minCoins = currentMinCoins;
       }
       // Remove the coin from the array
@@ -18,5 +18,5 @@ export const makeChange = memoize((coins: number[], amount: number): number => {
     }
   });
 
-  return minCoins + 1;
+  return minCoins === undefined ? 0 : minCoins + 1;
 });
