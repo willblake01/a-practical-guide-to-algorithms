@@ -1,7 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.linearSearch = exports.uniqueSort = void 0;
-var uniqueSort_1 = require("./uniqueSort");
-Object.defineProperty(exports, "uniqueSort", { enumerable: true, get: function () { return uniqueSort_1.uniqueSort; } });
+exports.uniqueSort = exports.mergeSort = exports.linearSearch = exports.bubbleSortOptimized = exports.bubbleSort = void 0;
+var bubbleSort_1 = require("./bubbleSort");
+Object.defineProperty(exports, "bubbleSort", { enumerable: true, get: function () { return bubbleSort_1.bubbleSort; } });
+var bubbleSortOptimized_1 = require("./bubbleSortOptimized");
+Object.defineProperty(exports, "bubbleSortOptimized", { enumerable: true, get: function () { return bubbleSortOptimized_1.bubbleSortOptimized; } });
 var linearSearch_1 = require("./linearSearch");
 Object.defineProperty(exports, "linearSearch", { enumerable: true, get: function () { return linearSearch_1.linearSearch; } });
+var mergeSort_1 = require("./mergeSort");
+Object.defineProperty(exports, "mergeSort", { enumerable: true, get: function () { return mergeSort_1.mergeSort; } });
+var uniqueSort_1 = require("./uniqueSort");
+Object.defineProperty(exports, "uniqueSort", { enumerable: true, get: function () { return uniqueSort_1.uniqueSort; } });
