@@ -13,5 +13,7 @@ describe('makeChange', () => {
     expect(makeChange([5, 10, 25], 45)).toBe(3);
     expect(makeChange([5, 10, 25], 50)).toBe(2);
     expect(makeChange([3, 6, 12], 18)).toBe(2);
+    expect(makeChange([3, 6, 12], 0)).toBe(0);
+    expect(makeChange([], 18)).toBe(0);
   });
 });
