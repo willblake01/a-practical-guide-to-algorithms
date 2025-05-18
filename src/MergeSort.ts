@@ -1,5 +1,15 @@
 import { memoize } from "./utils/memoize";
 
+// Merge sort is a divide and conquer algorithm that sorts an array by recursively dividing it into halves, sorting each half, and then merging the sorted halves back together.
+// It has a time complexity of O(n log n) and a space complexity of O(n).
+// It is a stable sort, meaning that it preserves the relative order of equal elements.
+// It is not an in-place sort, meaning that it requires additional space to store the sorted array.
+// It is a good choice for large datasets and is often used in external sorting algorithms.
+// Merge sort is not a good choice for small datasets, as the overhead of the recursive calls and merging can be more expensive than simpler algorithms like insertion sort or selection sort.
+// Merge sort is a good choice for linked lists, as it does not require random access to the elements and can be implemented in O(1) space.
+// Merge sort is a good choice for sorting large datasets that do not fit into memory, as it can be implemented as an external sort that uses disk space to store the sorted data.
+// Merge sort is a good choice for sorting data that is already partially sorted, as it can take advantage of the existing order to reduce the number of comparisons and swaps needed to sort the data.
+
 const merge = (left: number[], right: number[]): number[] => {
   let result: number[] = [];
   let indexLeft = 0;
