@@ -1,11 +1,11 @@
 interface Cache {
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 const cache: Cache = {};
 
 export const memoize = (func: Function) => {
-  return (...args: any[]) => {
+  return (...args: unknown[]) => {
     const key = JSON.stringify(args);
     if (key in cache) {
       console.log('Fetching from cache:', key);
