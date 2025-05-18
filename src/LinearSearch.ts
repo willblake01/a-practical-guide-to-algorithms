@@ -11,7 +11,8 @@ export const linearSearch = memoize((list: number[], item: number): number => {
   let index = -1;
 
   list.forEach((listItem, i) => {
-    if (listItem === item) {
+    // If the item is found, set the index to the index of the first occurrence
+    if (listItem === item && index === -1) {
       index = i; 
     }
   })

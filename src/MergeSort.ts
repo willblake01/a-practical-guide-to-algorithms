@@ -29,7 +29,7 @@ const merge = (left: number[], right: number[]): number[] => {
 }
 
 export const mergeSort = memoize((arr: number[]): number[] => {
-  if (arr.length === 1) {
+  if (arr.length <= 1) {
     return arr;
   }
 
