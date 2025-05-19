@@ -1,6 +1,6 @@
 
-export { bubbleSort } from './bubbleSort'
-export { bubbleSortOptimized } from './bubbleSortOptimized'
-export { linearSearch } from './linearSearch'
-export { mergeSort } from './mergeSort'
-export { uniqueSort } from './uniqueSort'
+export { BubbleSort } from './BubbleSort'
+export { BubbleSortOptimized } from './BubbleSortOptimized'
+export { LinearSearch } from './LinearSearch'
+export { MergeSort } from './MergeSort'
+export { UniqueSort } from './UniqueSort'

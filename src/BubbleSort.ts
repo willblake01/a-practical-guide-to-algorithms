@@ -7,7 +7,7 @@ import { memoize } from "./utils/memoize";
 // The time complexity of this function is O(n) because it may need to check every element in the array in the worst case.
 // The space complexity is O(1) because it only uses a constant amount of extra space for the index variable.
 
-export const bubbleSort = memoize((arr: number[]): number[] => {
+export const BubbleSort = memoize((arr: number[]): number[] => {
   let countOuter = 0;
   let countInner = 0;
   let countSwap = 0;

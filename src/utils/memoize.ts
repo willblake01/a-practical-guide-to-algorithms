@@ -1,6 +1,4 @@
-interface Cache {
-  [key: string]: unknown;
-}
+import { Cache } from "../types/types.type";
 
 const cache: Cache = {};
 

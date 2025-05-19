@@ -28,7 +28,7 @@ const merge = (left: number[], right: number[]): number[] => {
   return result.concat(left.slice(indexLeft)).concat(right.slice(indexRight));
 }
 
-export const mergeSort = memoize((arr: number[]): number[] => {
+export const MergeSort = memoize((arr: number[]): number[] => {
   if (arr.length <= 1) {
     return arr;
   }
@@ -37,11 +37,11 @@ export const mergeSort = memoize((arr: number[]): number[] => {
   const left = arr.slice(0, middle);
   const right = arr.slice(middle);
 
-  const sortedLeft = mergeSort(left);
-  const sortedRight = mergeSort(right);
+  const sortedLeft = MergeSort(left);
+  const sortedRight = MergeSort(right);
 
   return merge(
-    mergeSort(sortedLeft),
-    mergeSort(sortedRight)
+    MergeSort(sortedLeft),
+    MergeSort(sortedRight)
   );
 });
