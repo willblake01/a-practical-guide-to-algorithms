@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.MergeSort = void 0;
-const memoize_1 = require("./utils/memoize");
+const utils_1 = require("./utils");
 // Merge sort is a divide and conquer algorithm that sorts an array by recursively dividing it into halves, sorting each half, and then merging the sorted halves back together.
 // It has a time complexity of O(n log n) and a space complexity of O(n).
 // It is a stable sort, meaning that it preserves the relative order of equal elements.
@@ -27,7 +27,7 @@ const merge = (left, right) => {
     }
     return result.concat(left.slice(indexLeft)).concat(right.slice(indexRight));
 };
-exports.MergeSort = (0, memoize_1.memoize)((arr) => {
+exports.MergeSort = (0, utils_1.memoize)((arr) => {
     if (arr.length <= 1) {
         return arr;
     }

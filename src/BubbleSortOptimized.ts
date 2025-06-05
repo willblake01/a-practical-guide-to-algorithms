@@ -1,4 +1,4 @@
-import { memoize } from "./utils/memoize";
+import { memoize } from './utils';
 
 // The linearSearch function takes an array of numbers and a target number as input.
 // It iterates through the array and checks if each element is equal to the target number.

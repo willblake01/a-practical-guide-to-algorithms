@@ -1,4 +1,4 @@
-import { BubbleSortOptimized } from "./BubbleSortOptimized";
+import { BubbleSortOptimized } from './BubbleSortOptimized';
 
 describe('BubbleSortOptimized', () => {
   it('should return an empty array when given an empty array', () => {

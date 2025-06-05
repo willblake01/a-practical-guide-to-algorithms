@@ -1,4 +1,4 @@
-import { memoize } from "./utils/memoize";
+import { memoize } from './utils';
 
 // Merge sort is a divide and conquer algorithm that sorts an array by recursively dividing it into halves, sorting each half, and then merging the sorted halves back together.
 // It has a time complexity of O(n log n) and a space complexity of O(n).

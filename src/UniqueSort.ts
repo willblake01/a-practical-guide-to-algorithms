@@ -1,4 +1,4 @@
-import { memoize } from "./utils/memoize";
+import { memoize } from "./utils";
 import { Cache } from "./types/types.type";
 
 // The UniqueSort function takes an array of numbers as input and returns a new array with the unique numbers sorted in ascending order.
