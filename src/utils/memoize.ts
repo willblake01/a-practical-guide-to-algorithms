@@ -1,4 +1,4 @@
-import { Cache } from "../types/types.type";
+import { Cache } from '../types/types.type';
 
 const cache: Cache = {};
 

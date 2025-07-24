@@ -1,4 +1,4 @@
-import { memoize } from "../../utils";
+import { memoize } from '../../utils';
 
 // Greedy algorithms always make the locally optimal choice
 
